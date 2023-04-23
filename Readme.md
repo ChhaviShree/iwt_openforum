@@ -23,3 +23,25 @@
 > > multer-gridfs-storage: multer-gridfs-storage is a package that provides a storage engine for Multer that uses GridFS to store uploaded files.
 
 > > Helmet: Helmet is a middleware for securing Node.js web applications by setting various HTTP headers. It helps to protect against common web vulnerabilities, such as cross-site scripting (XSS), cross-site request forgery (CSRF), and clickjacking.
+
+-> react-redux: This is a package that allows you to use Redux with React. Redux is a state management library that helps you manage the state of your application in a predictable and consistent way.
+
+-> @reduxjs/toolkit: This is a package that provides a set of tools and utilities for working with Redux. It includes functions for creating reducers, actions, and selectors, as well as other utilities that make working with Redux easier.
+
+-> redux-persist: This is a package that allows you to persist the state of your Redux store to storage, such as the browser's local storage. This means that the state will be preserved even if the user refreshes the page or closes and reopens the application.
+
+-> react-dropzone: This is a package that provides a drag-and-drop file upload component for React. It allows users to easily upload files by dragging them from their computer and dropping them into a designated area on the page.
+
+-> formik: This is a package that provides a set of utilities for building forms in React. It helps with form validation, handling form values, and managing form submission.
+
+-> yup: This is a package that provides a schema validation library for JavaScript. It is often used with formik to define the validation schema for form fields.
+
+-> react-router-dom@6: This is a package that provides routing functionality for React applications. It allows you to define routes for different parts of your application and navigate between them.
+
+-> @mui/material: This is a package that provides a set of UI components for React based on the Material Design system. It includes components for buttons, forms, modals, and more.
+
+-> @emotion/react: This is a package that provides a set of utilities for working with CSS-in-JS in React. It allows you to write CSS styles as JavaScript objects and apply them to your components.
+
+-> @emotion/styled: This is a package that provides a styled-components-like API for working with CSS-in-JS in React. It allows you to define styles as components and apply them to your React components.
+
+-> @mui/icons-material: This is a package that provides a set of icons for use with the Material-UI library. It includes icons for common UI elements like arrows, buttons, and checkboxes.
