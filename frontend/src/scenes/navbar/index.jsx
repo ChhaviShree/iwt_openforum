@@ -56,7 +56,7 @@ const Navbar = () => {
             },
           }}
         >
-          Sociopedia
+          Openforum it is!
         </Typography>
         {isNonMobileScreens && (
           <FlexBetween
