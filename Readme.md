@@ -24,7 +24,7 @@
 
 > > Helmet: Helmet is a middleware for securing Node.js web applications by setting various HTTP headers. It helps to protect against common web vulnerabilities, such as cross-site scripting (XSS), cross-site request forgery (CSRF), and clickjacking.
 
--> react-redux: This is a package that allows you to use Redux with React. Redux is a state management library that helps you manage the state of your application in a predictable and consistent way.
+> > react-redux: This is a package that allows you to use Redux with React. Redux is a state management library that helps you manage the state of your application in a predictable and consistent way.
 
 -> @reduxjs/toolkit: This is a package that provides a set of tools and utilities for working with Redux. It includes functions for creating reducers, actions, and selectors, as well as other utilities that make working with Redux easier.
 
