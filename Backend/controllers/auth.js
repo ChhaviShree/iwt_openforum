@@ -15,8 +15,10 @@ export const register=async(req,res)=>{
         occupation
        }=req.body;
 
-       const salt=await bcrypt.genSalt();
-       const passwordHash=bcrypt.hash(password,salt);
+       const saltRounds = 10;
+       const salt = await bcrypt.genSalt(saltRounds);
+       const passwordHash = await bcrypt.hash(password, 10);
+
 
        const newUser=new User({
         firstName,
@@ -32,10 +34,10 @@ export const register=async(req,res)=>{
 
        });
        const savedUser=await newUser.save();
-       res.satus(201).json(savedUser);
+       res.status(201).json(savedUser);
     }
     catch(err){
-        res.status(500).json({error:err.mesaage});   
+        res.status(500).json({error:err.message});   
     }
 }
 
@@ -46,11 +48,12 @@ export const login=async(req,res)=>{
         if(!user)return res.status (400).json({msg:"user does not exist"});
 
         const isMatch=await bcrypt.compare(password,user.password);
-        if(!is.Match)return res.status(400).json({msg:"Invalid Credentials"});
+        if(!isMatch)return res.status(400).json({msg:"Invalid Credentials"});
 
         const token =jwt.sign({id:user._id},process.env.JWT_SECRET)
         delete user.password;
         res.status(200).json({token,user});
+
         }catch(err){
         res.status(500).json({error:err.message});
     }
